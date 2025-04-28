@@ -9,6 +9,7 @@ import { MdDashboardCustomize, MdKeyboardArrowDown } from "react-icons/md";
 import { BsArrowRight } from "react-icons/bs";
 import { CgIfDesign } from "react-icons/cg";
 import { FaCubesStacked } from "react-icons/fa6";
+import logo from "../../assets/logo-black.webp";
 
 const Navbar = () => {
   const [mobileAboutUsOpen, setMobileAboutUsOpen] = useState(false);
@@ -17,13 +18,9 @@ const Navbar = () => {
   const [searchBoxOpen, setSearchBox] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between w-full relative h-auto px-2.5">
+    <nav className="flex items-center justify-between w-full relative h-auto px-6 py-4 ">
       {/* logo */}
-      <img
-        src="https://i.ibb.co/0BZfPq6/darklogo.png"
-        alt="logo"
-        className="w-[60px] "
-      />
+      <img  src={logo} alt="logo" className="w-[90px] " />
 
       {/* nav links */}
       <ul className="items-center gap-[24px] text-[1rem] text-[#424242] md:flex hidden">

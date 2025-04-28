@@ -18,9 +18,9 @@ const Navbar = () => {
   const [searchBoxOpen, setSearchBox] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between w-full relative h-auto px-6 py-4 ">
+    <nav className="flex items-center justify-between w-full relative h-auto px-2 md:px-6 py-4 ">
       {/* logo */}
-      <img  src={logo} alt="logo" className="w-[90px] " />
+      <img src={logo} alt="logo" className="w-[90px]" />
 
       {/* nav links */}
       <ul className="items-center gap-[24px] text-[1rem] text-[#424242] md:flex hidden">

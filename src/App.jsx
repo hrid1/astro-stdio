@@ -1,6 +1,7 @@
 import "./App.css";
 import Blog from "./components/Blog/Blog";
 import Brand from "./components/Brand/Brand";
+import Footer from "./components/Footer/Footer";
 import HeroSection from "./components/HeroSection.jsx/HeroSection";
 import Navbar from "./components/Navber/Navbar";
 import PricingTable from "./components/PriceTable/PriceTable";
@@ -17,6 +18,7 @@ function App() {
       <Services/>
       <PricingTable/>
       <Blog/>
+      <Footer/>
     </div>
   );
 }

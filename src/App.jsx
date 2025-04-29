@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection.jsx/HeroSection";
 import Navbar from "./components/Navber/Navbar";
 import PricingTable from "./components/PriceTable/PriceTable";
 import Services from "./components/Services/Services";
+import Slider from "./components/Slider/Slider";
 import Testimonial from "./components/Testimonial/Testimonial";
 import WeAre from "./components/WeAre/WeAre";
 
@@ -19,6 +20,7 @@ function App() {
       <Services/>
       <PricingTable/>
       <Blog/>
+      <Slider/>
       <Testimonial/>
       <Footer/>
     </div>

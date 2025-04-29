@@ -2,7 +2,7 @@ import hero from "../../assets/hero.jpg";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-visible px-4 sm:px-6 py-12 sm:py-16">
+    <section className="relative overflow-visible px-4 sm:px-6 py-12 sm:py-16 mt-12">
       <div className="max-w-6xl mx-auto relative z-10">
         <h4 className="text-xl sm:text-2xl font-bold uppercase tracking-widest mb-4 flex items-center gap-2 sm:gap-4">
           Digital

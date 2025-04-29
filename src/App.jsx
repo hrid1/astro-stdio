@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection.jsx/HeroSection";
 import Navbar from "./components/Navber/Navbar";
 import PricingTable from "./components/PriceTable/PriceTable";
 import Services from "./components/Services/Services";
+import Testimonial from "./components/Testimonial/Testimonial";
 import WeAre from "./components/WeAre/WeAre";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Services/>
       <PricingTable/>
       <Blog/>
+      <Testimonial/>
       <Footer/>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // react icons
 import { IoIosArrowDown, IoIosSearch } from "react-icons/io";
@@ -17,8 +17,23 @@ const Navbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [searchBoxOpen, setSearchBox] = useState(false);
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="flex items-center justify-between w-full relative h-auto px-2 md:px-6 py-4 ">
+    <nav
+      className={`flex items-center justify-between w-full h-auto px-2 md:px-6 py-4 fixed z-100 top-0 bg-white transition-all duration-300 border-gray-300${
+        scrolled ? "border-b shadow-sm" : ""
+      }`}
+    >
       {/* logo */}
       <img src={logo} alt="logo" className="w-[90px]" />
 
@@ -333,7 +348,7 @@ const Navbar = () => {
               mobileServiceOpen ? "hidden" : "block"
             } font-[500] ml-6`}
           >
-            <ul className="flex flex-col gap-[7px] text-[#424242]">
+            {/* <ul className="flex flex-col gap-[7px] text-[#424242]">
               <li className="flex items-center gap-[7px] hover:text-[#000] transition-all duration-300">
                 <BsArrowRight className="text-[#424242] text-[0.9rem]" />{" "}
                 Company Details
@@ -350,7 +365,7 @@ const Navbar = () => {
                 <BsArrowRight className="text-[#424242] text-[0.9rem]" /> Office
                 Tour
               </li>
-            </ul>
+            </ul> */}
 
             <div className="flex flex-col gap-[10px] mt-4">
               <div className="flex items-center gap-[10px] text-[1rem] text-[#424242]">

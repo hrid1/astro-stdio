@@ -6,7 +6,7 @@ import brand5 from "../../assets/brands/5.webp";
 import brand6 from "../../assets/brands/6.webp";
 const Brand = () => {
   return (
-    <div className="mt-90">
+    <div className="mt-60 md:mt-100 mb-30">
       <h3 className="text-xl font-medium text-center uppercase">
         We worked with global largest brands
       </h3>

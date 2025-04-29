@@ -1,4 +1,5 @@
 import "./App.css";
+import Blog from "./components/Blog/Blog";
 import Brand from "./components/Brand/Brand";
 import HeroSection from "./components/HeroSection.jsx/HeroSection";
 import Navbar from "./components/Navber/Navbar";
@@ -15,6 +16,7 @@ function App() {
       <WeAre/>
       <Services/>
       <PricingTable/>
+      <Blog/>
     </div>
   );
 }

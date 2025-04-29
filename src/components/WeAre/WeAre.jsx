@@ -9,7 +9,7 @@ const WeAre = () => {
           <img
             src={who} // Replace with your image
             alt="Office"
-            className="w-full h-auto object-cover rounded-md"
+            className="w-full h-auto object-cover "
           />
         </div>
 
@@ -32,7 +32,7 @@ const WeAre = () => {
                 experiences that customers love our services.
               </p>
               {/* Explore Button */}
-              <button className="relative inline-flex items-center justify-center p-12 w-[170px] h-[170px] overflow-hidden font-medium text-white transition duration-300 ease-out border border-gray-500 rounded-full shadow-md group">
+              <button className="relative inline-flex items-center justify-center p-12 w-[170px] h-[170px] overflow-hidden font-medium text-white transition duration-300 ease-out border rounded-full shadow-md group">
                 <span className="absolute inset-0 flex items-center justify-center w-full h-full text-gray-300 duration-500 -translate-x-full bg-gray-700 group-hover:translate-x-0 ease">
                   Explore Us →
                 </span>

@@ -3,7 +3,7 @@ import blog2 from "../../assets/blog/blog2.jpg";
 
 const Blog = () => {
   return (
-    <section>
+    <section className="my-6 md:my-16">
       {/* top */}
       <div>
         <div className="max-w-xl mx-auto my-6">
